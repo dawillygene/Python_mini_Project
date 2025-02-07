@@ -1,10 +1,10 @@
 
 menu = {
-    "popcorn": 5.00,
-    "soda": 3.00,
-    "hot dog": 4.50,
-    "nachos": 6.00,
-    "candy": 2.50
+    "popcorn":2000,
+    "soda": 700,
+    "hot dog": 1200,
+    "nachos":4500,
+    "candy": 200
 }
 
 
@@ -12,7 +12,7 @@ def display_menu():
     print("\nWelcome to the Concession Stand!")
     print("Menu:")
     for item, price in menu.items():
-        print(f"{item.capitalize()}: ${price:.2f}")
+        print(f"{item.capitalize()}: Tsh{price:.2f}")
 
 
 def take_order():
@@ -40,8 +40,8 @@ def calculate_total(order):
 def display_order(order, total):
     print("\nYour order:")
     for item in order:
-        print(f"- {item.capitalize()}: ${menu[item]:.2f}")
-    print(f"Total: ${total:.2f}")
+        print(f"- {item.capitalize()}: Tsh {menu[item]:.2f}")
+    print(f"Total: Tsh {total:.2f}")
 
 
 def main():

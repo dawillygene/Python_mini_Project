@@ -5,7 +5,7 @@ def countdown_timer(total_time):
     while total_time:
        
         mins, secs = divmod(total_time, 60)
-        timer = f"{mins:02d}:{secs:02d}"
+        timer = f"Timmer : {mins:02d}:{secs:02d}"
         print(timer, end="\r")  
         time.sleep(1)  
         total_time -= 1  
