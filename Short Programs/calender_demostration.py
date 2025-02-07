@@ -1,9 +1,8 @@
 import datetime
 
 def create_calendar(year, month):  
-    first_day = datetime.date(year, month, 1).weekday()  # 0=Monday, 6=Sunday  
+    first_day = datetime.date(year, month, 1).weekday()  
 
-    # Handle December case properly
     if month == 12:
         next_month = datetime.date(year + 1, 1, 1)
     else:
@@ -20,5 +19,5 @@ def create_calendar(year, month):
             print()  
     print()  
 
-# Example usage  
+
 create_calendar(2023, 12)
