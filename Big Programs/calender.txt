@@ -3,18 +3,23 @@ def day_of_week(y, m, d):
     t = [0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4]
     if m < 3:
         y -= 1
-    return (y + y // 4 - y // 100 + y // 400 + t[m - 1] + d) % 7
+    return (y + y // 4 - y // 100 + 
+    y // 400 + t[m - 1] + d) % 7
 
 def days_in_month(m, y):
     if m == 2:
-        return 29 if (y % 4 == 0 and (y % 100 != 0 or y % 400 == 0)) else 28
+        return 29 if (y % 4 == 0 and 
+        (y % 100 != 0 or y % 400 == 0)) 
+        else 28
     return 30 if m in {4, 6, 9, 11} else 31
 
 
 month, year = 12, 2012
 month_names = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
+    "January", "February", "March", 
+    "April", "May", "June",
+    "July", "August", "September", 
+    "October", "November", "December"
 ]
 
 

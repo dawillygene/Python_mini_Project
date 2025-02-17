@@ -24,13 +24,13 @@ class TypeWriter(QMainWindow):
         self.create_start_button()
 
     def setup_window(self):
-        self.setWindowTitle("Dawillygene Code")
+        self.setWindowTitle("@ Dawillygene")
         self.setGeometry(0, 0, 1920, 1080)  # Fullscreen
         self.setStyleSheet("background-color: #1e1e1e; color: white;")
 
         layout = QVBoxLayout()
 
-        self.header = QLabel("DAWILLYGENE CODE")
+        self.header = QLabel("@dawillygene")
         self.header.setStyleSheet("color: #00ff00; font-size: 36px; font-weight: bold;")
         layout.addWidget(self.header)
 
