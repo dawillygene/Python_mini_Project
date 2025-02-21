@@ -30,7 +30,7 @@ class TypeWriter(QMainWindow):
 
         layout = QVBoxLayout()
 
-        self.header = QLabel("@dawillygene")
+        self.header = QLabel("")
         self.header.setStyleSheet("color: #00ff00; font-size: 36px; font-weight: bold;")
         layout.addWidget(self.header)
 
